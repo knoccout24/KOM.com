@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>K.O.M</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container personal site">
+      <form>
+        <h1></h1>
+        <div class="social-icons">
+        </div>
+      </form>
+    </div>
+    <div class="form-container sign-in">
+      <form>
+        <h1>Work site</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+         <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>Projects, Codes, and more</span>
+        <button type="button" onclick="navigateToPortfolio()">See More</button>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>K.O.M</h1>
+          <p>Personal site..</p>
+            <button class="hidden" id="login" onclick="navigateToLanding_Page()">Enter</button>
+            <button class="hidden" id="login" onclick="navigateToNav_Page()">Photography</button>
+        </div>
+        <link rel="stylesheet" href="index.css">
+        <div class="toggle-panel toggle-right">
+          <h1>K.O.M</h1>
+          <p>Photography, Blogs, and More</p>
+        <link rel="stylesheet" href="index.css">
+          <button class="hidden" id="register">See More</button>
+          <script src="login.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function navigateToPortfolio() {
+      window.location.href = 'portfolio.html';
+    }
+    function navigateToLanding_Page() {
+      window.location.href = "landing_page.html";
+    }
+    function navigateToNav_Page() {
+      window.location.href = "nav_page.html";
+    }
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
